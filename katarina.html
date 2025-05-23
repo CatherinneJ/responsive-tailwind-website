@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <style>
+        @keyframes pulse-once {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .animate-pulse-once {
+            animation: pulse-once 6s ease-in-out 1;
+        }
+
+        @keyframes spin-once {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animate-spin-once {
+            animation: spin-once 5s linear 1;
+        }
+
+        :root {
+            --my-text-color: #996830;
+            --my-bg-color: #996830;
+        }
+
+        .my-box {
+            color: var(--my-text-color);
+            background-color: var(--my-bg-color);
+        }
+
+        -
+    </style>
+</head>
+
+<body>
+    <section class="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 xl:px-12 py-16">
+        <div class="mb-12 xl:px-12">
+            <div class="flex items-center space-x-4 mb-2">
+                <div class="h-px bg-[var(--my-bg-color)] w-12 sm:w-20"></div>
+                <p class="text-sm font-semibold uppercase tracking-widest text-[var(--my-text-color)] mb-2">
+                    Our Services
+                </p>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
+                We provide the <span class="italic font-serif">best solutions</span><br />
+                for your dream home
+            </h2>
+        </div>
+
+        <div class="flex flex-col md:flex-col lg:flex-row justify-center gap-6 flex-wrap md:place-items-stretch">
+            <div
+                class=" w-full h-[20rem] lg:w-[19rem] md:w-[23rem]  border border-gray-300 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-start items-start text-left">
+                <div class="w-12 h-20 mb-5 rounded-sm self-start">
+                    <img src="images/Union.png" alt="Building" class="bg-white text-[var(--my-text-color)]">
+                </div>
+                <h3 class="text-lg md:text-xl mb-2">Architectural <span style="font-family: 'Niconne', cursive;"
+                        class="text-1xl">&</span><span class="block md:hidden"><br /></span><span
+                        class="hidden md:inline"> </span>Interior design</h3>
+                <p class=" text-start text-gray-600 text-sm text-center">
+                    Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat
+                    ipsum
+                    ultricies.
+                </p>
+            </div>
+
+            <div
+                class="w-full h-[20rem] lg:w-[19rem] md:w-[23rem] border border-gray-300 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-start items-start text-left">
+                <div class="w-12 h-20 mb-5 rounded-sm self-start">
+                    <img src="images/Vector 3.png" alt="Building"
+                        class="items-start bg-white text-[var(--my-text-color)]">
+                </div>
+                <h3 class="text-xl mb-2 text-start">Building<span class="block md:hidden"><br /></span><span
+                        class="hidden md:inline"> </span>Renovation</h3>
+                <p class="text-gray-700  text-start text-sm text-center">
+                    Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,molestie volutpat
+                    ipsum,
+                    ultricies.
+                </p>
+            </div>
+
+            <div
+                class="w-full h-[20rem] lg:w-[19rem] md:w-[23rem]  border border-gray-300 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-start items-start text-left">
+                <div class="w-12 h-20 mb-5 rounded-sm  self-start">
+                    <img src="images/Service.png" alt="Building"
+                        class="items-start bg-white text-[var(--my-text-color)]">
+                </div>
+                <h3 class="text-xl mb-2 text-start">Construction<span class="block md:hidden"><br /></span><span
+                        class="hidden md:inline"> </span>Management</h3>
+                <p class="text-gray-600 text-sm text-start">
+                    Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat
+                    ipsum,
+                    ultricies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <section class="max-w-screen-xl mx-auto px-6  sm:px-10 md:px-12 lg:px-16 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="flex flex-col">
+                    <div class="flex items-center space-x-4 mb-2">
+                        <div class="h-px bg-[var(--my-bg-color)] w-12 sm:w-20"></div>
+                        <p class="text-sm font-semibold uppercase tracking-widest text-[var(--my-text-color)] mb-2">
+                            Recent Works</p>
+
+                    </div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5x1 font-serif mb-6">
+                        Some of <span class="italic font-serif">our crafts</span><br />
+                        made with love
+                    </h2>
+                    <img src="images/kitchen.png" alt="kitchen"
+                        class="w-full h-[300px] md:h-[400px] object-cover rounded-md shadow mb-4" />
+                    <h3 class="text-3xl text-[#2C2C2C] mb-2">Villa Furnishing <span
+                            style="font-family: 'Niconne', cursive;" class="text-1xl">&</span> Interior</h3>
+                    <p class="text-gray-600 text-sm mb-4 max-w-md">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus
+                        nam. Erat id laroeet poseure etiam morbi.
+                    </p>
+                    <button
+                        class="bg-[#996830] text-white text-sm font-semibold uppercase tracking-widest mt-10 px-5 py-2 rounded hover:bg-[#a36f40] transition w-max animate-bounce">
+                        Contact Us ↗
+                    </button>
+                </div>
+                <div class="flex flex-col justify-between gap-8">
+                    <div>
+                        <img src="images/living.png" alt="living"
+                            class="w-[460px] h-[3OOpx]  md:h-[300px] object-cover rounded-md mb-3" />
+                        <h3 class="text-3xl text-[#2C2C2C] mb-1 animate-pulse duration-[5000ms]">Luxury Hotel Renovation
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <p class="text-gray-600 text-sm">Faucibus fringilla dui amet faucibus nam.</p>
+                    </div>
+                    <div>
+                        <img src="images/pool.png" alt="pool"
+                            class="w-[460px] h-[300px] md:h-[300px] object-cover rounded-md shadow mb-3" />
+                        <h3 class="text-3xl text-[#2C2C2C] mb-1">Residence Swimming Pool</h3>
+                        <p class="text-gray-600 text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <p class="text-gray-600 text-sm">Faucibus fringilla dui amet faucibus nam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-16">
+            <hr class="border-t border-gray-300 mt-10">
+        </div>
+        <section class="bg-white text-gray-700 px-6 py-10 max-w-6xl mx-auto">
+            <div class="flex flex-col lg:flex-row md:justify-between md:items-start md-gap-20">
+                <div class="md:w-[40%]">
+                    <h1 class="text-3xl font-serif md:text-4x1 text-left text-neutral-800">Kick-start your dream</h1>
+                    <h1 class="text-3xl font-serif md:text-4x1 text-left text-neutral-800">home with us</h1>
+                    <p class="italic text-[var(--my-text-color)] text-3xl font-serif underline mt-4">Send us a hi</p>
+                </div>
+                <div class="mt-10 md:mt-0 md:w-[40%] space-y-6">
+                    <div>
+                        <h5 class="text-lg font-serif">Brooklyn, New York</h5>
+                        <p class="text-xs">962 Fifth Avenue Str, 3rd Floor-Trump</p>
+                        <p class="text-xs">Building NY 10006, Unite State</p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-xs">Email us at</p>
+                        <p class="text-[var(--my-text-color)] text-sm">hello@landify.design</p>
+                    </div>
+
+                    <div>
+                        <p class="font-medium text-xs">If you´re hurry, quick call for us.</p>
+                        <h4 class="text-[var(--my-text-color)] font-medium text-lg">+8(663)125-08-59</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="max-w-7xl mx-auto px-15">
+            <hr class="border-t border-gray-300 mt-10">
+        </div>
+        <footer class="bg-white text-gray-500 xl:px-15 px-8 py-6 max-w-6x1 mx-auto">
+            <div class="flex flex-col xl:flex-row items-start justify-between gap-6 ">
+                <div class="text-center md:text-left text-xs w-full xl:w-1/2">
+                    <p>&copy; 2022 Inteo-Award winning studio. Made with love by <span
+                            class="text-[var(--my-text-color)] font-semibold">Landyfi.</span></p>
+                </div>
+                <div class="w-full xl:w-1/2">
+                    <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-start xl:justify-end">
+                        <div class="flex items-center gap-4">
+                            <span class="uppercase text-sm tracking-wide">Connect</span>
+                            <div class="h-px bg-gray-300 w-12 sm:w-20"></div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://instagram.com" target="_blank"
+                                class="w-10 h-10 flex items-center justify-center rounded-full  border border-gray-300 bg-white text-[var(--my-text-color)] hover:opacity-80 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com" target="_blank"
+                                class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white text-[var(--my-text-color)] hover:opacity-80 transition animate-ping">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank"
+                                class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full bg-white text-[var(--my-text-color)] hover:opacity-80 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank"
+                                class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full bg-white text-[var(--my-text-color)] hover:opacity-80 transition duration-[6s] animate-spin-once">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
