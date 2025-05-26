@@ -6,3 +6,6 @@ This is an assignment: Responsive-tailwind-website
 
 ## Author
 Diego, Katarina.
+
+## Main File
+tailwind.html
